@@ -1,0 +1,22 @@
+'use strict';
+Object.assign(process.env, {
+  NODE_ENV: 'test',
+  PORT: '5000',
+  MONGODB_URI: 'mongodb://127.0.0.1:27017/unused',
+  FRONTEND_ORIGIN: 'http://localhost:3000',
+  SESSION_COOKIE_NAME: 'rsvr_session',
+  SESSION_TTL_HOURS: '24',
+  SESSION_TOKEN_PEPPER: 'test-pepper-0123456789-0123456789-abcdef',
+  OTP_HASH_SECRET: 'test-otp-secret-9876543210-9876543210-xyz',
+  OTP_TTL_SECONDS: '300',
+  OTP_MAX_ATTEMPTS: '5',
+  OTP_RESEND_COOLDOWN_SECONDS: '60',
+  OTP_HOURLY_LIMIT: '5',
+  EMAIL_USER: 'sender@example.com',
+  EMAIL_PASS: 'not-a-real-password',
+  EMAIL_FROM: 'sender@example.com',
+  WEBAUTHN_RP_NAME: 'RSVR Test',
+  WEBAUTHN_RP_ID: 'localhost',
+  WEBAUTHN_ORIGIN: 'http://localhost:3000',
+  LOG_LEVEL: 'error',
+});

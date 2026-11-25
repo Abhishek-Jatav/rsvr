@@ -1,0 +1,24 @@
+{
+  "name": "rsvr-auth-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js frontend for the RSVR Secure Authentication System",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@simplewebauthn/browser": "^14.0.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.7.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19"
+  }
+}

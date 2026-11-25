@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-surface-page text-ink antialiased; overflow-x: hidden; }
+  /* Visible keyboard focus everywhere */
+  :focus-visible { @apply outline-none ring-2 ring-brand ring-offset-2; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-base font-semibold
+           transition-colors disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary { @apply bg-brand text-white hover:bg-brand-hover; }
+  .btn-secondary { @apply border border-line bg-white text-ink hover:bg-slate-50; }
+  .field-input {
+    @apply block min-h-[44px] w-full rounded-lg border border-line bg-white px-3 py-2 text-base text-ink
+           placeholder:text-slate-400 disabled:bg-slate-100;
+  }
+  .field-input[aria-invalid='true'] { @apply border-danger; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

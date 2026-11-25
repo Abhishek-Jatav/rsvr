@@ -1,0 +1,5 @@
+# Netlify builds Next.js with its built-in runtime. Set the base directory to "frontend"
+# in the Netlify UI if you deploy the monorepo, and set NEXT_PUBLIC_API_BASE_URL there.
+[build]
+  command = "npm run build"
+  publish = ".next"
