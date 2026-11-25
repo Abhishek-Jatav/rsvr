@@ -3,6 +3,8 @@ node_modules/
 .env
 .env.*
 .env.production
+backend/.env.production
+frontend/.env.production
 .env.local
 *.log
 coverage/
